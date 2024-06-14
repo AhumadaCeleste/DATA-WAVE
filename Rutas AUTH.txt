@@ -1,0 +1,8 @@
+// Nuevo ciudad http://localhost:3001/ciudad/nuevo
+Rutas.post('/nuevo',Auth,ciudadcontroller.nuevo);
+
+// Eliminar un ciudad 
+Rutas.delete('/eliminar/:id',Auth, ciudadcontroller.eliminar);
+
+// Actualizar un ciudad
+Rutas.put('/actualizar/:id', ciudadcontroller.actualizar);
