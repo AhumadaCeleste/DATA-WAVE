@@ -1,0 +1,70 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.bg-color{
+  background-color: rgba(28,39,48,.5);
+}
+
+/* background-color: #00c4cc;*/
+
+
+.letraAzul{
+  background-color: #020f1f;
+}
+
+
+.header{
+  background-image: url("./IMAGES/Equipo.jpg");
+};
+
+
+
+.login-form-container {
+  background-image: url("./IMAGES/Equipo.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+};
+
+.circulo2 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background-color: #3182ce; /* Cambiar a un color de fondo adecuado */
+  animation-name: muv;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+@keyframes fadeInMoveUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInMoveUp {
+  animation: fadeInMoveUp 2s ease-out;
+}
+@media print {
+
+  .no-print {
+    display: none !important; 
+  }
+
+ 
+  body {
+    margin: 0;
+    padding: 0;
+    font-size: 12px; 
+  }
+
+
+}
